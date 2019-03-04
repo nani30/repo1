@@ -1,0 +1,9 @@
+steps:
+  - name: "gcr.io/cloud-builders/go"
+    args: ["install", "github.com/nani30/repo1"]
+    env: ["PROJECT_ROOT=github.com/nani30/repo1"]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/kubernetes-233505/repo1:$REVISION_ID", "-f", "Dockerfile", "."]
+images:
+  - "gcr.io/kubernetes-233505/repo1:$REVISION_ID"
+
