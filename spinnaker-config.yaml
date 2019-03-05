@@ -1,0 +1,53 @@
+gcs:
+  enabled: true
+  bucket: kubernetes-233505-spinnaker-config
+  project: kubernetes-233505
+  jsonKey: '{
+  "type": "service_account",
+  "project_id": "kubernetes-233505",
+  "private_key_id": "25df183261ce487282fc92e089eccd83c7bc25d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxiCH+CMsjaFE4\n/sS2xG6v1qVuA86ph5voJkloLYwXYUDcYiqBYsv20XTKQi47zawn5v+fY1EJL3E8\nxk1vm63Uke2gJLh7nPTuUeEQEmpKwyn+95nFJ/sVK41Kf4xHs8krXwT7UyDastpz\nGfK3QSq/C85icnJ7PJ5pgXY81GUF5Y5spBW9XGdkAtlSKdT/6uVQVjXjvgcyvuYE\n2eNn5uteDlsQZYFUNf+eGaCql4D/MZHdsCImoyHdm6dGz2AofsQziniqaFEWQN5R\nWc7emWG/4NsRdpIzBpBEsS2sfX6TLEYL2KxmakHbOokdULtEyq4KgXv9TX5HjCFf\ngDxLPK31AgMBAAECggEAThYMrYn8n7RQlXsp1yILdXg6B2vRSKwHHVNJ0nLGPbpf\nJxBelc543DVA4328jD1ozZxDLz4l9J5TdmHayY52JRuSo2/DXUuqR/Dnx4PyELRL\nEoShtCBjxeoEGZKEhz1C7Lq8nDbyKn+kqh/trEETpjhxLMgeJqqBGvMAqLzbOn4C\n2Ko08jjAwGBibHHHWoaeesnTCFRtHz+n1YeaZTAA6c5EQR4yngVf5ou/205YgH2h\nmOLkcM/3YFiqbnsb+ioiz2yWyCrv0WeUUoLYUEy5szpwpN4PBuovEfO9Ki36CBzo\nFMGST8QkzBoFSn3i+KZagTfKO9KU/fwpzggR9Z8OOQKBgQDyKdluovAbCQlyDkG/\nTMaZGRvLq8IktptIemO0C1LwT0ZxeunNTcnLo+oYn5ztf6UPCx9fh2+1pOhspFAq\n5M0qu99T0S9SN2bSecZm9/WxYmDoCCYj2vajZYJWCZ9YFamrKImaXWKltQpIF1n3\n3pXH1YctYkLwYnuwt2XS5eXcdwKBgQC7rOieyXMuYZtmsISRSISuiEEqfPmv5wEu\n+zNQDdGmCLInXV6u0acQ7x+K0nWK281bvfmqxT4vRzYJkQ8XhRv3RWh7d0BZXRJx\nNSJhbO09hKnHhrk+d6rX5NwLgE+g1RXCZJ4QsPaEpfECg+JcHCVrI78KfidEjS/G\nDap6LvYf8wKBgQDrRa1xx+vu2EDNBvzplvX8GGDg5+afNKp5KC9l5PqXbu3Jotk0\nFbdQmdf+RFR6ieEbVHsOnM7zc1w88QbSJakPM6guDrYi8qB7LMSNlaqmxCXSSNiF\nTV8CMMUIQiEFu0Y0fBX0W3ZT+CgdElLeduqeU94ZQbY3RfdWIVhUJffE0QKBgA1T\n1BkimSlcCRsbwe5HRhTW3DnWMi0JrI3XjOdMc+zkhTJCcSzc+o47TPQgyfQYc9bm\nAMrdwvK8jdvUD0xOSZQfu7G44Dr4XwznBxAAGkDaIOxoZtNG0D0QpYezjvQO7cKm\nPotU5cy5tAnHr9V2sjmPikuGdedqV1ArPEX8+8F9AoGBAKGON8yG5TzlDaWALIPD\nmAKmfsCcupFTXhsPtEfOvQBgq7o/q0WcwT3ZAkTEwbwgTNjVpb/CmH8N/ZoPwvGO\nddeZIWBqBqlkYeDLIEV4r1Hb6qAJq1HpzVNm6WVZk5h2kLv9ARFAqJefmYjUS+TM\n7UG1Yo1ce0gcXrOd3d/XPDUl\n-----END PRIVATE KEY-----\n",
+  "client_email": "spinnaker-account@kubernetes-233505.iam.gserviceaccount.com",
+  "client_id": "103471804155429445129",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnaker-account%40kubernetes-233505.iam.gserviceaccount.com"
+}'
+
+dockerRegistries:
+- name: gcr
+  address: https://gcr.io
+  username: _json_key
+  password: '{
+  "type": "service_account",
+  "project_id": "kubernetes-233505",
+  "private_key_id": "25df183261ce487282fc92e089eccd83c7bc25d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCxiCH+CMsjaFE4\n/sS2xG6v1qVuA86ph5voJkloLYwXYUDcYiqBYsv20XTKQi47zawn5v+fY1EJL3E8\nxk1vm63Uke2gJLh7nPTuUeEQEmpKwyn+95nFJ/sVK41Kf4xHs8krXwT7UyDastpz\nGfK3QSq/C85icnJ7PJ5pgXY81GUF5Y5spBW9XGdkAtlSKdT/6uVQVjXjvgcyvuYE\n2eNn5uteDlsQZYFUNf+eGaCql4D/MZHdsCImoyHdm6dGz2AofsQziniqaFEWQN5R\nWc7emWG/4NsRdpIzBpBEsS2sfX6TLEYL2KxmakHbOokdULtEyq4KgXv9TX5HjCFf\ngDxLPK31AgMBAAECggEAThYMrYn8n7RQlXsp1yILdXg6B2vRSKwHHVNJ0nLGPbpf\nJxBelc543DVA4328jD1ozZxDLz4l9J5TdmHayY52JRuSo2/DXUuqR/Dnx4PyELRL\nEoShtCBjxeoEGZKEhz1C7Lq8nDbyKn+kqh/trEETpjhxLMgeJqqBGvMAqLzbOn4C\n2Ko08jjAwGBibHHHWoaeesnTCFRtHz+n1YeaZTAA6c5EQR4yngVf5ou/205YgH2h\nmOLkcM/3YFiqbnsb+ioiz2yWyCrv0WeUUoLYUEy5szpwpN4PBuovEfO9Ki36CBzo\nFMGST8QkzBoFSn3i+KZagTfKO9KU/fwpzggR9Z8OOQKBgQDyKdluovAbCQlyDkG/\nTMaZGRvLq8IktptIemO0C1LwT0ZxeunNTcnLo+oYn5ztf6UPCx9fh2+1pOhspFAq\n5M0qu99T0S9SN2bSecZm9/WxYmDoCCYj2vajZYJWCZ9YFamrKImaXWKltQpIF1n3\n3pXH1YctYkLwYnuwt2XS5eXcdwKBgQC7rOieyXMuYZtmsISRSISuiEEqfPmv5wEu\n+zNQDdGmCLInXV6u0acQ7x+K0nWK281bvfmqxT4vRzYJkQ8XhRv3RWh7d0BZXRJx\nNSJhbO09hKnHhrk+d6rX5NwLgE+g1RXCZJ4QsPaEpfECg+JcHCVrI78KfidEjS/G\nDap6LvYf8wKBgQDrRa1xx+vu2EDNBvzplvX8GGDg5+afNKp5KC9l5PqXbu3Jotk0\nFbdQmdf+RFR6ieEbVHsOnM7zc1w88QbSJakPM6guDrYi8qB7LMSNlaqmxCXSSNiF\nTV8CMMUIQiEFu0Y0fBX0W3ZT+CgdElLeduqeU94ZQbY3RfdWIVhUJffE0QKBgA1T\n1BkimSlcCRsbwe5HRhTW3DnWMi0JrI3XjOdMc+zkhTJCcSzc+o47TPQgyfQYc9bm\nAMrdwvK8jdvUD0xOSZQfu7G44Dr4XwznBxAAGkDaIOxoZtNG0D0QpYezjvQO7cKm\nPotU5cy5tAnHr9V2sjmPikuGdedqV1ArPEX8+8F9AoGBAKGON8yG5TzlDaWALIPD\nmAKmfsCcupFTXhsPtEfOvQBgq7o/q0WcwT3ZAkTEwbwgTNjVpb/CmH8N/ZoPwvGO\nddeZIWBqBqlkYeDLIEV4r1Hb6qAJq1HpzVNm6WVZk5h2kLv9ARFAqJefmYjUS+TM\n7UG1Yo1ce0gcXrOd3d/XPDUl\n-----END PRIVATE KEY-----\n",
+  "client_email": "spinnaker-account@kubernetes-233505.iam.gserviceaccount.com",
+  "client_id": "103471804155429445129",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnaker-account%40kubernetes-233505.iam.gserviceaccount.com"
+}'
+  email: 1234@5678.com
+
+# Disable minio as the default storage backend
+minio:
+  enabled: false
+
+# Configure Spinnaker to enable GCP services
+halyard:
+  spinnakerVersion: 1.10.2
+  image:
+    tag: 1.12.0
+  additionalScripts:
+    create: true
+    data:
+      enable_gcs_artifacts.sh: |-
+        $HAL_COMMAND config artifact gcs account add gcs-kubernetes-233505 --json-path /opt/gcs/key.json
+        $HAL_COMMAND config artifact gcs enable
+      enable_pubsub_triggers.sh: |-
+        $HAL_COMMAND config pubsub google enable
+        $HAL_COMMAND config pubsub google subscription add gcr-triggers           --subscription-name gcr-triggers           --json-path /opt/gcs/key.json           --project kubernetes-233505           --message-format GCR
